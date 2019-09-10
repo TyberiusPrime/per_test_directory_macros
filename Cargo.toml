@@ -1,0 +1,17 @@
+[package]
+name = "per_test_directory_macros"
+version = "0.1.0"
+authors = ["Florian Finkernagel <finkernagel@imt.uni-marburg.de>"]
+edition = "2018"
+description = "Proc macros for the per_test_directory crate"
+repository = "https://github.com/TyberiusPrime/per_test_directory_macros"
+readme = "readme.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.2"
+syn = { version = "1.0.5", features = ["full"] }
